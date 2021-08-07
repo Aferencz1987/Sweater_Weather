@@ -1,4 +1,4 @@
-class ForcastSerializer
+class WeatherSerializer
   include FastJsonapi::ObjectSerializer
   set_id :null
   set_type :forecast
