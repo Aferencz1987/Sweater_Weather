@@ -4,10 +4,11 @@ RSpec.describe 'open weather api' do
   it 'returns weather for location' do
     VCR.use_cassette 'denver weather' do
       result = WeatherService.weather(39.738453, -104.984853)
-require "pry"; binding.pry
-      expect(result[:data]).to have_key(:attributes)
-      expect(result[:data][:attributes]).to have_key(:current_weather)
-      expect(result[:data][:attributes]).to have_key(:daily_weather)
+
+      expect(result[:coord]).to have_key(:lon)
+      expect(result[:coord]).to have_key(:lat)
+      expect(result[:main]).to have_key(:temp)
+      expect(result[:main][:temp]).to eq(81.7) #why is it rounding from .57 to 7?
     end
   end
 end

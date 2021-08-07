@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?appid=470112d6052910b74ec6eb7c450a81af&lat=39.738453&lon=-104.984853&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 07 Aug 2021 20:09:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '482'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=39.74&lon=-104.98&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-104.9807,"lat":39.7426},"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"base":"stations","main":{"temp":81.7,"feels_like":80.2,"temp_min":77.5,"temp_max":85.77,"pressure":1008,"humidity":29},"visibility":10000,"wind":{"speed":1.01,"deg":212,"gust":5.01},"clouds":{"all":11},"dt":1628366878,"sys":{"type":2,"id":2004334,"country":"US","sunrise":1628337888,"sunset":1628388392},"timezone":-21600,"id":5419384,"name":"Denver","cod":200}'
+  recorded_at: Sat, 07 Aug 2021 20:09:36 GMT
+recorded_with: VCR 6.0.0
