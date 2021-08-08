@@ -8,7 +8,7 @@ RSpec.describe 'forecast request' do
     get "/api/v1/forecast?location=#{location}"
 
     forecast_result = JSON.parse(response.body, symbolize_names: true)
-    expect(forecast_result).to have_key(:attributes)
+    expect(forecast_result[:data]).to have_key(:attributes)
     end
   end
 end
