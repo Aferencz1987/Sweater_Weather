@@ -1,6 +1,7 @@
 class MapFacade
   def self.coordinates(location)
-    coordinates_result = MapService.coordinates_finder(location)
+    stripped_location = location.delete(' ')
+    coordinates_result = MapService.coordinates_finder(stripped_location)
     map_info = coordinates_result[:results].first
 
   MapPoro.new(location: map_info[:providedLocation][:location],

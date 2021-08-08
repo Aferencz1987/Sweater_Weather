@@ -1,4 +1,4 @@
-class WeatherPoro
+class ForecastPoro
   attr_reader :current_datetime,
               :current_sunrise,
               :current_sunset,
@@ -9,8 +9,8 @@ class WeatherPoro
               :current_visibility,
               :current_condition,
               :current_icon,
-              :daily_weather,
-              :hourly_weather
+              :daily_forecast,
+              :hourly_forecast
 
   def initialize(attributes)
     @current_datetime = attributes[:current_datetime]
@@ -23,7 +23,7 @@ class WeatherPoro
     @current_visibility = attributes[:current_visibility]
     @current_condition = attributes[:current_condition]
     @current_icon = attributes[:current_icon]
-    @daily_weather = attributes[:daily_weather]
-    @hourly_weather = attributes[:hourly_weather]
+    @daily_forecast = attributes[:daily_forecast]
+    @hourly_forecast = attributes[:hourly_forecast]
   end
 end
