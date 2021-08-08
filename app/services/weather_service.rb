@@ -1,7 +1,7 @@
 class WeatherService
 
   def self.weather(lat, lon)
-    response = conn.get "/data/2.5/weather?lat=#{lat}&lon=#{lon}&appid=#{ENV['WEATHER_KEY']}&units=imperial"
+    response = conn.get "/data/2.5/onecall?lat=#{lat}&lon=#{lon}&exclude=minutely,alerts&appid=#{ENV['WEATHER_KEY']}&units=imperial"
       search_result = JSON.parse(response.body, symbolize_names: true)
   end
 
