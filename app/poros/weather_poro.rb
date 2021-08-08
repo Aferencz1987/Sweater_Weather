@@ -7,8 +7,10 @@ class WeatherPoro
               :current_humidity,
               :current_uvi,
               :current_visibility,
-              :current_description,
-              :current_icon
+              :current_condition,
+              :current_icon,
+              :daily_weather,
+              :hourly_weather
 
   def initialize(attributes)
     @current_datetime = attributes[:current_datetime]
@@ -19,7 +21,9 @@ class WeatherPoro
     @current_humidity = attributes[:current_humidity]
     @current_uvi = attributes[:current_uvi]
     @current_visibility = attributes[:current_visibility]
-    @current_description = attributes[:current_description]
+    @current_condition = attributes[:current_condition]
     @current_icon = attributes[:current_icon]
+    @daily_weather = attributes[:daily_weather]
+    @hourly_weather = attributes[:hourly_weather]
   end
 end
