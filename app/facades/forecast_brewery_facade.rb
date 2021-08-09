@@ -1,9 +1,9 @@
 class ForecastBreweryFacade
-  def self.breweries_and_forecast(coordinates)
+  def self.breweries_and_forecast(coordinates, quantity)
     brewery_result = BreweryService.breweries(coordinates)
     forecast_result = ForecastService.forecast(coordinates)
     location = coordinates.location
-
+    quantity = quantity.to_i
     brewery_array = brewery_result.map do |brewery|
       {
         id: brewery[:id],
@@ -17,6 +17,6 @@ class ForecastBreweryFacade
       summary: forecast_result[:current][:weather].first[:description],
       }
     ForecastBreweryPoro.new(forecast: current_weather,
-                    breweries: brewery_array, destination: location)
+                    breweries: brewery_array, destination: location, quantity: quantity)
   end
 end

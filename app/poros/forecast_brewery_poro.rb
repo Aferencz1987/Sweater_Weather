@@ -7,7 +7,7 @@ class ForecastBreweryPoro
   def initialize(attributes)
     @id = ''
     @destination = attributes[:destination]
-    @breweries = attributes[:breweries]
+    @breweries = attributes[:breweries].take(attributes[:quantity])
     @forecast = attributes[:forecast]
   end
 end
