@@ -1,0 +1,3 @@
+class forecast < ApplicationRecord
+  
+end
