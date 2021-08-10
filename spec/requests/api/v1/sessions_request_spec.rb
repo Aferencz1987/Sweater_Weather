@@ -11,8 +11,8 @@ RSpec.describe 'session request' do
       }
 
     session_result = JSON.parse(response.body, symbolize_names: true)
-    expect(user_result[:data]).to have_key(:attributes)
-    expect(user_result[:data][:attributes][:email]).to eq("whatever@example.com")
+    expect(session_result[:data]).to have_key(:attributes)
+    expect(session_result[:data][:attributes][:email]).to eq("whatever@example.com")
     expect(status).to be(201)
   end
 
@@ -23,9 +23,9 @@ RSpec.describe 'session request' do
         "email": "whatever@example.com",
         "password": "password"
       }
-    user_result = JSON.parse(response.body, symbolize_names: true)
+    session_result = JSON.parse(response.body, symbolize_names: true)
 
     expect(status).to eq(400)
-    expect(user_result[:error]).to eq("Incorrect password or email.")
+    expect(session_result[:error]).to eq("Incorrect password or email.")
   end
 end

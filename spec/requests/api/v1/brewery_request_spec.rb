@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'brewery request' do
-  it 'can return breweries for location' do
+  xit 'can return breweries for location' do
     VCR.use_cassette 'brewery response for denver' do
     location = 'Denver, CO'
     quantity = 3
@@ -12,7 +12,7 @@ RSpec.describe 'brewery request' do
     end
   end
 
-  it 'will error if bad quantity given' do
+  xit 'will error if bad quantity given' do
     VCR.use_cassette 'brewery response for denver' do
     location = 'Denver, CO'
     quantity = -1

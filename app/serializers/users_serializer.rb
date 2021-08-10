@@ -1,4 +1,4 @@
-class UserSerializer
+class UsersSerializer
   include FastJsonapi::ObjectSerializer
   set_type :users
   set_id :id
