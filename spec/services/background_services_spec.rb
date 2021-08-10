@@ -7,7 +7,6 @@ RSpec.describe 'background api' do
       result = BackgroundService.image(map)
 
       expect(result[:total]).to eq(5072)
-      require "pry"; binding.pry
       expect(result[:results].first[:description]).to eq("Night Time Downtown Denver")
       expect(result[:results][0]).to have_key(:urls)
     end
