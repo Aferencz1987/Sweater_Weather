@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&location=Mars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 11 Aug 2021 03:31:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '3798'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Wed, 11 Aug 2021 03:31:10 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=0E6BA3BBDB6A2A0E6F3A74B0426045F1; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Mars"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Mars","adminArea5Type":"City","adminArea4":"Gard","adminArea4Type":"County","adminArea3":"","adminArea3Type":"State","adminArea1":"FR","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282369184","unknownInput":"","type":"s","latLng":{"lat":44.000965,"lng":3.556045},"displayLatLng":{"lat":44.000965,"lng":3.556045},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&type=map&size=225,160&locations=44.000965,3.556045|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-597441411"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Mars","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"RH\u00D4NE-ALPES","adminArea3Type":"State","adminArea1":"FR","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282395047","unknownInput":"","type":"s","latLng":{"lat":45.022172,"lng":4.322155},"displayLatLng":{"lat":45.022172,"lng":4.322155},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&type=map&size=225,160&locations=45.022172,4.322155|marker-sm-50318A-2&scalebar=true&zoom=12&rand=1547789737"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Mars","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"RH\u00D4NE-ALPES","adminArea3Type":"State","adminArea1":"FR","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282398416","unknownInput":"","type":"s","latLng":{"lat":46.155,"lng":4.24649},"displayLatLng":{"lat":46.155,"lng":4.24649},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&type=map&size=225,160&locations=46.155,4.24649|marker-sm-50318A-3&scalebar=true&zoom=12&rand=-2141634114"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Mars","adminArea5Type":"City","adminArea4":"Butler
+        County","adminArea4Type":"County","adminArea3":"PA","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282021957","unknownInput":"","type":"s","latLng":{"lat":40.696938,"lng":-80.011888},"displayLatLng":{"lat":40.696938,"lng":-80.011888},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&type=map&size=225,160&locations=40.696938,-80.011888|marker-sm-50318A-4&scalebar=true&zoom=12&rand=2143609832"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Mars","adminArea5Type":"City","adminArea4":"","adminArea4Type":"County","adminArea3":"REPUBLIC
+        OF BASHKORTOSTAN","adminArea3Type":"State","adminArea1":"RU","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"283555842","unknownInput":"","type":"s","latLng":{"lat":54.106811,"lng":55.912426},"displayLatLng":{"lat":54.106811,"lng":55.912426},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&type=map&size=225,160&locations=54.106811,55.912426|marker-sm-50318A-5&scalebar=true&zoom=12&rand=764691978"}]}]}'
+  recorded_at: Wed, 11 Aug 2021 03:31:10 GMT
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/directions/v2/route?from=Denver,CO,CO&key=707NU1mrfn0YajkP4NIxVnK0O3CewVQH&to=Mars
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 11 Aug 2021 03:31:10 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '278'
+      Set-Cookie:
+      - JSESSIONID=08C2EA3C3C619669493CF68533F00E1E; Path=/directions; HttpOnly
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Last-Modified:
+      - Wed, 11 Aug 2021 03:31:10 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJpbWFnZUFsdFRleHQiOiLCqSAyMDIxIE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsInRleHQiOiLCqSAyMDIxIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
+  recorded_at: Wed, 11 Aug 2021 03:31:10 GMT
+recorded_with: VCR 6.0.0
