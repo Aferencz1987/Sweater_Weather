@@ -1,14 +1,23 @@
 require 'rails_helper'
 
-RSpec.describe 'forecast facade' do
-  it 'returns forecast' do
-    VCR.use_cassette 'denver forecast' do
-      map = MapPoro.new(location: 'Denver,CO', latitude: 39.738453,longitude: -104.984853)
-      result = ForecastFacade.forecast(map)
+RSpec.describe 'road trip facade' do
+  it 'returns travel details' do
+    VCR.use_cassette 'denver to bend' do
+      start = 'Denver,CO'
+      finish = 'Bend,OR'
 
-      expect(result.current_forecast.count).to eq(10)
-      expect(result.hourly_forecast.count).to eq(8)
-      expect(result.daily_forecast.count).to eq(5)
+      result = RoadTripFacade.trip_details(start, finish)
+      expect(result.travel_time).to eq("16:13:11")
+    end
+  end
+
+  it 'error if travel is impossible' do
+    VCR.use_cassette 'denver to mars' do
+      start = 'Denver,CO'
+      finish = 'Mars'
+
+      result = RoadTripFacade.trip_details(start, finish)
+      expect(result).to eq(false)
     end
   end
 end

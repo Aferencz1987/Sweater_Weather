@@ -57,6 +57,9 @@ GEM
     crass (1.0.6)
     diff-lcs (1.4.4)
     docile (1.4.0)
+    dotiw (5.3.1)
+      activesupport
+      i18n
     erubi (1.10.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
@@ -212,6 +215,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   byebug
+  dotiw
   factory_bot_rails
   faker
   faraday

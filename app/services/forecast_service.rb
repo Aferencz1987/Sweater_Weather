@@ -7,9 +7,8 @@ class ForecastService
       search_result = JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.conn   #(auth_token = nil)
+  def self.conn
     Faraday.new(url: 'http://api.openweathermap.org') do |faraday|
-      # faraday.headers[:Authorization] = "Bearer #{auth_token}"
     end
   end
 end

@@ -36,4 +36,5 @@ class ForecastFacade
                     daily_forecast: daily_array,
                     hourly_forecast: hourly_array)
   end
+
 end
