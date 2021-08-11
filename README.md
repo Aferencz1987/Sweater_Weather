@@ -84,14 +84,14 @@ Sweater Weather use the REST design structure.
 
 #### Testing
  * [rspec-rails](https://github.com/rspec/rspec-rails)  
- * RUN `bundle exec rspec`
+ * From command line run `bundle exec rspec`
 
 #### API consumption
  * [unsplash photo api](https://unsplash.com/developers)  
  * [open weather map](https://openweathermap.org/api/one-call-api)
  * [mapquest api](https://developer.mapquest.com/documentation/)  
 
-#### Run Sweater Weather
+#### To run Sweater Weather run this in command line
  * `git clone`
  * `cd sw_final`
  * `bundle install`
